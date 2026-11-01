@@ -1,0 +1,17 @@
+name = "thumbsgama-api"
+main = "worker/index.js"
+compatibility_date = "2026-11-01"
+workers_dev = true
+
+# Después de crear D1, reemplaza el ID de ejemplo por el database_id real.
+[[d1_databases]]
+binding = "DB"
+database_name = "thumbsgama-db"
+database_id = "PEGA_AQUI_EL_DATABASE_ID"
+
+[vars]
+# Reemplaza este dominio por el dominio real donde publiques index.html.
+ALLOWED_ORIGIN = "https://TU-USUARIO.neocities.org"
+# Puedes cambiar el modelo desde el panel de Cloudflare sin editar el código.
+IMAGE_MODEL = "gpt-image-2.5-sunburst"
+REASONING_MODEL = "gpt-6-astra"
